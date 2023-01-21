@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: 'Inter', sans-serif;
+}
+.container{
+    position: relative;
+    width:100%;
+    height:100vh;
+    background-color:#f0f0f0;
+    overflow:hidden;
+}
+header{
+    position: relative;
+    width:100%;
+    padding:12px 0;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+}
+.logo{
+    position: relative;
+    display:flex;
+    align-items:center;
+}
+.logo img{
+    width:35%;
+}
+.logo a{
+    text-transform: capitalize;
+    font-size:20px;
+    font-weight:700;
+    color:#241e22;
+    text-decoration:none;
+    letter-spacing:1px;
+    margin-top:-25px;
+}
+.menu ul{
+    position: relative;
+    display:flex;
+    margin-top:-20px;
+}
+.menu ul li{
+    list-style:none;
+}
+.menu ul li a{
+    text-decoration:none;
+    text-transform: capitalize;
+    font-size:16px;
+    font-weight:500;
+    color:#241e22;
+    margin:0 20px;
+    cursor: pointer;
+    transition:0.5s;
+}
+.menu ul li a:hover{
+    color:red;
+}
+.user-icon{
+    position: relative;
+    margin-top:-10px;
+}
+.user-icon .ur-icon{
+    width:14%;
+    margin:0 12px;
+    cursor: pointer;
+    transition:0.3s;
+}
+.user-icon .ur-icon:hover{
+    transform:rotate(25deg);
+}
+.content{
+    position: relative;
+    top:60px;
+    padding:0 200px;
+    display:flex;
+}
+.info h1{
+    font-size:5rem;
+    font-weight:700;
+    color:#241e22;
+}
+.info .info-text{
+    padding-top:10px;
+    font-size:20px;
+    line-height:1.5;
+    color:#373737;
+}
+.btn{
+    position: relative;
+    top:40px;
+    width:250px;
+    height:45px;
+    border-radius:70px;
+    text-align:center;
+    line-height:44px;
+    background-color:#f0f0f0;
+    box-shadow:15px 10px 50px rgba(97,97,97,0.25);
+}
+.btn button{
+    text-transform: capitalize;
+    background-color:transparent;
+    border:none;
+    font-size:16px;
+    font-weight:600;
+    color:#241e22;
+    letter-spacing:0.08em;
+    transition:0.3s;
+    cursor: pointer;
+}
+.btn button:hover{
+    color:red;
+}
+.btn button i{
+    position: relative;
+    left:2px;
+    top:1.5px;
+    transition:0.3s;
+}
+.btn button:hover i{
+    left:8px;
+}
+.scroll-btn{
+    position: absolute;
+    top:50vh;
+    left:100vh;
+    text-align:center;
+    cursor: pointer;
+}
+.scroll-btn img{
+    width:18%;
+    transition:0.3s;
+}
+.scroll-btn .scrl-text{
+    font-size:16px;
+    transition:0.3s;
+    text-transform: capitalize;
+    padding-top:5px;
+}
+.scroll-btn:hover .scrl-text{
+    color:red;
+}
+.hero-img{
+    position: absolute;
+    right:-8vh;
+    top:-8vh;
+}
+.hero-img img{
+    width:70%;
+}
+.social-icon{
+    position: absolute;
+    right:180px;
+    top:48vh;
+    display:flex;
+    flex-direction: column;
+    z-index:2;
+}
+.social-icon img{
+    width:30%;
+    margin:12px 0;
+    cursor: pointer;
+    transition:0.3s;
+}
+.social-icon img:hover{
+    transform:scale(1.2);
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/910ce80589.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>webpage Design</title>
+</head>
+<body>
+    <div class="container">
+         <header>
+             <div class="logo">
+                 <img src="img/logo.png">
+                 <a href="">mamondots</a>
+             </div>
+             <div class="menu">
+                 <ul>
+                    <li><a href="">home</a></li>
+                    <li><a href="">reservation</a></li>
+                    <li><a href="">contacts</a></li>
+                 </ul>
+             </div>
+             <div class="user-icon">
+                 <img src="img/natification.png" class="ur-icon">
+                 <img src="img/user.png" class="ur-icon">
+             </div>
+         </header>
+         <div class="content">
+              <div class="info">
+                 <h1>Ride in Style</h1>
+                 <p class="info-text">Rent a Vespa at any VespaJoy location<br>
+                    across Canada and enjoy unlimited kilometres!
+                </p>
+                    <div class="btn">
+                        <button>rent a vespa now <i class="fa-solid fa-arrow-right-long"></i></button>
+                    </div>
+                    <div class="scroll-btn">
+                         <img src="img/scorl.png">
+                         <p class="scrl-text">scroll down</p>
+                    </div>
+              </div>
+              <div class="hero-img">
+                 <img src="img/bike.png">
+                 <div class="social-icon">
+                     <img src="img/facebook.png">
+                     <img src="img/twiter.png">
+                     <img src="img/message.png">
+                 </div>
+              </div>
+         </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script>
+    let animation = anime({
+        targets:'header',
+        translateX:[100,0],
+        opacity:[0,1],
+        duration:800,
+        easing:'easeInOutSine'
+    });
+
+    anime({
+        targets:'.info h1',
+        translateX:[-100,0],
+        opacity:[0,1],
+        duration:800,
+        easing:'easeInOutSine',
+        delay:500
+    });
+    anime({
+        targets:'.info .info-text',
+        translateX:[50,0],
+        opacity:[0,1],
+        duration:800,
+        easing:'easeInOutSine',
+        delay:500
+    });
+
+    anime({
+        targets:'.info .btn',
+        translateX:[-50,0],
+        opacity:[0,1],
+        duration:800,
+        easing:'easeInOutSine',
+        delay:500
+    });
+
+    anime({
+        targets:'.scroll-btn',
+        translateY:[-50,0],
+        opacity:[0,1],
+        duration:800,
+        easing:'easeInOutSine',
+        delay:800
+    });
+
+    anime({
+        targets:'.hero-img img',
+        translateY:[50,0],
+        opacity:[0,1],
+        duration:800,
+        easing:'easeInOutSine',
+        delay:700
+    });
+
+    anime({
+        targets:'.social-icon',
+        translateX:[50,0],
+        opacity:[0,1],
+        duration:800,
+        easing:'easeInOutSine',
+        delay:1200
+    });
+
+
+</script>
+</body>
+</html>
